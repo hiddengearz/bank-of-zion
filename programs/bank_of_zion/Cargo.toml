@@ -1,0 +1,36 @@
+[package]
+name = "bank-of-zion"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+no-entrypoint = []
+test-bpf = []
+
+[dependencies]
+solana-program = "1.14"
+thiserror = "1.0"
+num-derive = "0.3"
+num-traits = "0.2"
+bytemuck = { version = "1.7.2", features = ["derive"] }
+pyth-sdk-solana="0.7.0"
+spl-token = { version = "3.5.0", features = [ "no-entrypoint" ] }
+arrayref = "0.3.6"
+spl-math = { version = "0.1.0", features = [ "no-entrypoint" ] }
+
+[dev-dependencies]
+solana-sdk = "1.10.29"
+#solana-test-framework = { git = "https://github.com/halbornteam/solana-test-framework", branch = "solana1.14" }
+solana-test-framework = { path = "/Users/michaelsmith/Documents/halborn_projects/solana-test-framework-dev", features = ["pyth"] }
+tokio = {version="1.6", features = ["macros"]}
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version ="1.1.2", features = ["no-entrypoint"] }
+pyth = { path = "/Users/michaelsmith/Documents/halborn_projects/bank-of-zion/programs/pyth", features = [ "no-entrypoint" ]}
+solana-program-test = "1.14"
+
+
+[lib]
+crate-type = ["cdylib", "lib"]
+#doctest = false

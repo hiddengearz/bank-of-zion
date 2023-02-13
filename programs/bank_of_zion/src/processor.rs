@@ -675,7 +675,7 @@ impl Processor {
                     token_a_user_info,
                     swap_authority_info,
                     token_a_withdraw,
-                    &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.bump]],
+                    &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.swap_authority_bump]],
                 )?;
             }
 
@@ -687,7 +687,7 @@ impl Processor {
                     token_b_user_info,
                     swap_authority_info,
                     token_b_withdraw,
-                    &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.bump]],
+                    &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.swap_authority_bump]],
                 )?;
             }
 
@@ -852,7 +852,7 @@ impl Processor {
             destination_user_info,
             swap_authority_info,
             destination_amount,
-            &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.bump]],
+            &[AUTHORITY_PREFIX.as_bytes(), &[swap_state.swap_authority_bump]],
         )?;
 
         Ok(())

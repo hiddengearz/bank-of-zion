@@ -24,10 +24,11 @@ spl-math = { version = "0.1.0", features = [ "no-entrypoint" ] }
 solana-sdk = "1.10.29"
 #solana-test-framework = { git = "https://github.com/halbornteam/solana-test-framework", branch = "solana1.14" }
 solana-test-framework = { path = "/Users/michaelsmith/Documents/halborn_projects/solana-test-framework-dev", features = ["pyth"] }
+#solana-test-framework = { git = "https://github.com/halbornteam/solana-test-framework", branch = "solana1.14", features = [ "pyth"]}
 tokio = {version="1.6", features = ["macros"]}
 spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
 spl-associated-token-account = { version ="1.1.2", features = ["no-entrypoint"] }
-pyth = { path = "/Users/michaelsmith/Documents/halborn_projects/bank-of-zion/programs/pyth", features = [ "no-entrypoint" ]}
+pyth = { path = "../pyth", features = [ "no-entrypoint" ]}
 solana-program-test = "1.14"
 
 

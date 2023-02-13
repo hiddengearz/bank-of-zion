@@ -3,7 +3,7 @@
 use anchor_lang::prelude::*;
 use borsh::{BorshDeserialize, BorshSerialize};
 
-declare_id!("CwrqeMj2U8tFr1Rhkgwc84tpAsqbt9pTt2a4taoTADPr");
+declare_id!("GS9ftm9H95koKobmomiJeThUY1zPwJpvikQJT6jiXFgB");
 
 #[program]
 pub mod basic_4 {

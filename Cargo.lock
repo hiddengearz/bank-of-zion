@@ -4075,6 +4075,7 @@ dependencies = [
 [[package]]
 name = "solana-test-framework"
 version = "1.14.0"
+source = "git+https://github.com/halbornteam/solana-test-framework?branch=solana1.14#dbdb5a3b20596bd3b4244d5ed1c5515efeb6d9bf"
 dependencies = [
  "async-trait",
  "bincode",
@@ -4092,7 +4093,6 @@ dependencies = [
  "solana-sdk",
  "spl-associated-token-account",
  "spl-token",
- "thiserror",
 ]
 
 [[package]]
